@@ -43,7 +43,7 @@ def genre_urls_dic(genre_url):
     genre_data = []
     
     for i in range(1,pages+1):
-        page_url = 'https://www.literotica.com/c/fetish-stories/%s-page' % (i)
+        page_url = genre_url+'/%s-page' % (i)
         # harvest data
         ## get each div element containing a story
         story_roots = tree.xpath('//div[@class="b-sl-item-r w-34t"]')
